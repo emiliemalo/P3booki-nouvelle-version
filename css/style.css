@@ -1,0 +1,231 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.logo-booki {
+    display: flex;
+    padding: 38px 50px;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .container {
+    width: 381px;
+    height: 19px;
+    margin-top: 35px;
+  
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .element1 {
+    color: #0065fc;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 40px;
+  }
+  .element1::before {
+    content: "";
+    position: absolute;
+    top: -35px; /* Position au-dessus du contenu */
+    left: -20px;
+    width: 162px;
+    height: 2px; /* Hauteur de la barre */
+    background-color: transparent; /* Couleur de la barre par défaut (invisible) */
+    transition: #0065fc; /* Transition pour l'animation */
+  }
+  
+  .element1:hover::before {
+    background-color: #0065fc;
+  }
+  
+  .element2 {
+    color: #000000;
+    width: 63px;
+    height: 19px;
+    line-height: 18.78px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 40px;
+  }
+  
+  .h2 {
+    font-weight: 700;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 25.83px;
+    width: 1340px;
+    height: 26px;
+  }
+  
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+    width: 65%;
+}
+
+/****** Populaires ***********/
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
