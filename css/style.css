@@ -63,7 +63,6 @@ body {
   width: 162px;
   height: 2px; /* Hauteur de la barre */
   background-color: transparent; /* Couleur de la barre par défaut (invisible) */
-  transition: #0065fc; /* Transition pour l'animation */
 }
 
 .element1:hover::before {
@@ -230,24 +229,27 @@ input {
 .fa-solid .fa-info {
   color: #0065fc;
   border: 1px solid #d9d9d9;
+  border-radius: 50%;
+
+  display: flex;
+  padding-right: 5px;
+}
+
+#info {
+  color: #0065fc;
+  border: 1px solid #d9d9d9;
   padding: 5px;
   border-radius: 50%;
   display: flex;
-  
-}
-#info{
-    color: #0065fc;
-    border: 1px solid #d9d9d9;
-    padding: 5px;
-    border-radius: 50%;
-    display: flex;
-    width: 10px;
-    height: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    vertical-align:middle;
+  justify-content: center;
 
-  }
+  width: 10px;
+  height: 10px;
+
+  margin-bottom: 15px;
+  margin-right: 15px;
+  font-size: 12px;
+}
 
 a {
   color: inherit;
@@ -510,6 +512,7 @@ a {
 
   .barre-filtre {
     font-size: 16px;
+    display: flex;
   }
 
   .hebergements-and-populaires {
@@ -535,15 +538,12 @@ a {
     justify-content: space-between;
     gap: 15px;
     width: 100%;
-   
   }
 
   .populaires-cards a {
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
     width: 33%;
-
-    
   }
 
   .populaires-cards img {
@@ -573,7 +573,6 @@ a {
     display: flex;
     flex-direction: column;
   }
-  
 
   .activites-cards {
     display: flex;
