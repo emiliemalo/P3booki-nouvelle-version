@@ -16,7 +16,16 @@
 body {
   display: flex;
   justify-content: center;
+  margin-top: 0px;
+
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 
 .main-container {
   width: 100%;
@@ -34,39 +43,26 @@ body {
 }
 
 .container {
-  width: 381px;
-  height: 19px;
-  margin-top: 35px;
-
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
-  position: absolute;
-  top: 0;
-  right: 0;
+    display: flex;
+    flex-direction: row;
 }
 
-.element1 {
-  color: #0065fc;
+.element-nav {
+  color: #000000;
   font-weight: 500;
   font-size: 16px;
-  line-height: 18.78px;
-  text-decoration: none;
   text-align: center;
-  margin-right: 40px;
-}
-.element1::before {
-  content: "";
-  position: absolute;
-  top: -35px; /* Position au-dessus du contenu */
-  left: -20px;
-  width: 162px;
-  height: 2px; /* Hauteur de la barre */
-  background-color: transparent; /* Couleur de la barre par défaut (invisible) */
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-top: 2px white;
+  background-color: transparent;
+ 
 }
 
-.element1:hover::before {
-  background-color: #0065fc;
+.element-nav:hover {
+    border-top: solid 2px #0065fc;
+    color: #0065fc;
 }
 
 .element2 {
@@ -599,7 +595,19 @@ a {
 
 @media (max-width: 768px)
 {
-    .main-container {
+
+    body {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    
+      .main-container {
         width: 100%;
         max-width: 768px;
         margin: 30px 0 0 0;
@@ -607,31 +615,37 @@ a {
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-      
-    }
-}
-    .body {
-        display: flex;
-        flex-direction: column;
       }
-      
-      .header{
-
+    
+      .logo-booki {
         display: flex;
+        align-items: center;
+        width: 100%;
        
+      }
+    
+      .image-logo {
+        display: flex;
+    
+        
+      }
+    
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+    
+      .element-nav {
+
+       align-items: center;
+
 
 
       }
-        
-      
-      .logo-booki img {
-        overflow: ;
-     width: 61px;
-    height: 19px;
-   
+
+
+
     }
-
-      
-
       
       
