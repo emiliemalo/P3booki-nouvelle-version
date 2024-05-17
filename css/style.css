@@ -17,15 +17,14 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 0px;
-
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
 .main-container {
   width: 100%;
@@ -43,8 +42,8 @@ header {
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .element-nav {
@@ -57,25 +56,14 @@ header {
   padding-left: 20px;
   border-top: 2px white;
   background-color: transparent;
- 
 }
 
 .element-nav:hover {
-    border-top: solid 2px #0065fc;
-    color: #0065fc;
+  border-top: solid 2px #0065fc;
+  color: #0065fc;
 }
 
-.element2 {
-  color: #000000;
-  width: 63px;
-  height: 19px;
-  line-height: 18.78px;
-  text-decoration: none;
-  text-align: center;
-  margin-right: 40px;
-}
-
-.h2 {
+h2 {
   font-weight: 700;
   font-size: 22px;
   font-style: normal;
@@ -103,7 +91,7 @@ header {
 
 /****** Zone de recherche ***********/
 
-.input-container {
+.search-bar {
   margin-top: 35px;
   margin-bottom: 35px;
 }
@@ -139,7 +127,7 @@ input {
 
 /*********Bouton*********/
 
-.button {
+button {
   color: white;
   background-color: #0065fc;
   width: 132px;
@@ -156,6 +144,10 @@ input {
   font-weight: 700;
   font-size: 18px;
   line-height: 17px;
+}
+
+.fa-magnifying-glass {
+  display: none;
 }
 
 /*********Filtres*********/
@@ -593,59 +585,71 @@ a {
 
 /***** Mobile ******/
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 
-    body {
-        display: flex;
-        flex-direction: column;
-      }
-    
-      header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-    
-      .main-container {
-        width: 100%;
-        max-width: 768px;
-        margin: 30px 0 0 0;
-        padding: 0;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-      }
-    
-      .logo-booki {
-        display: flex;
-        align-items: center;
-        width: 100%;
-       
-      }
-    
-      .image-logo {
-        display: flex;
-    
-        
-      }
-    
-      .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-      }
-    
-      .element-nav {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-       align-items: center;
+  .main-container {
+    width: 100%;
+    max-width: 768px;
+    margin: 30px 0 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .logo-booki img {
+    display: flex;
+    width: 61px;
+    height: 19px;
+  }
 
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 
-      }
+  .element-nav {
+    justify-content: center;
+    width: 100%;
+ 
+  }
 
+  .element-nav:hover {
+    border-bottom: solid 2px #0065fc;
+    color: #0065fc;
+  }
 
+  h2 {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+  }
 
-    }
-      
-      
+  .search-bar {
+
+  }
+
+  button {
+    display: none;
+  }
+  .fa-magnifying-glass {
+    display: block;
+    color: white;
+    background-color: #0065fc;
+    margin-left: -15px;
+    box-shadow: 0 4px 4px #0000002e;
+  }
+}
