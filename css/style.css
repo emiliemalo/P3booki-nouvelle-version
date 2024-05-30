@@ -151,6 +151,7 @@ button {
 
 .fa-magnifying-glass {
   display: none;
+
 }
 
 /*********Filtres*********/
@@ -310,7 +311,7 @@ a {
 
 
 .hebergements-title {
-  display: flex
+  display: flex;
   justify-content: flex-start;
 }
 
@@ -377,6 +378,7 @@ a {
 /****** Populaires ***********/
 .populaires {
   width: 32%;
+ 
 }
 
 .populaires-title {
@@ -631,11 +633,13 @@ a {
 
   nav {
     display: flex;
+
   }
 
 
   .element-nav {
     display: flex;
+    width: 100%;
   
   }
 
@@ -658,16 +662,26 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    line-height: unset;
   }
 
   button {
     display: none;
+
   }
   .fa-magnifying-glass {
-
-    display: block;
-    color: white;
-    background-color: #0065fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  color: white;
+      background-color: #0065fc;
+      box-shadow: 0 4px 4px #0000002e;
+      width: 49px;
+      height: 49px;
+      border-radius: 15px;
+  
+    
+    
 
   }
 
@@ -675,10 +689,13 @@ a {
     display: flex;
     flex-direction: row;
    flex-wrap: wrap;
-  }
+   width: 100%;
+padding: unset;
+  
 
 
  /****** Hebergements And Populaires ***********/
+  }
 
 .hebergements-and-populaires {
     display: flex;
@@ -690,10 +707,13 @@ a {
   }
   
   .hebergements-and-populaires section  {
-    
+padding: unset;
     background-color: unset;
     box-sizing: content-box;
     border-radius: unset;
+    width: 100%;
+
+ 
   }
   
   /***** POPULAIRE ****/
@@ -702,6 +722,7 @@ a {
     order: -1;
     background-size: cover;
     background-color:#f2f2f2;
+
   }
 
   .populaires-cards {
@@ -712,7 +733,6 @@ a {
 
   .populaires-cards .card {
     display: flex;
-    flex-direction: column;
     width: 100%;
   }
 
@@ -722,6 +742,7 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
+ 
   }
 
   .populaires-cards img {
@@ -775,23 +796,27 @@ a {
     width: 100%;
 
  
-
+ 
   }
   
   .H-card {
     display: flex;
   width: 100%;
 
+
   }
   
   .H-card img {
 display: flex;
+
+
   }
   
 
   
 .Afficher-plus p{
     display: flex;
+    justify-content: center;
 
 }
 
