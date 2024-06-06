@@ -507,6 +507,12 @@ a {
   .barre-filtre {
     font-size: 16px;
     display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .contenu-filtre {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   .hebergements-and-populaires {
@@ -604,9 +610,7 @@ a {
 
   header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -629,10 +633,14 @@ a {
 
   nav {
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   .element-nav {
     display: flex;
+    width: 100%;
+    text-align: center;
     width: 100%;
   }
 
@@ -653,10 +661,12 @@ a {
   .search-bar {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    line-height: unset;
+    flex-wrap: nowrap;
   }
 
+  input {
+    flex-wrap: nowrap;
+  }
   button {
     display: none;
   }
