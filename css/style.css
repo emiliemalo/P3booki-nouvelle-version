@@ -14,7 +14,6 @@
 }
 
 body {
-  
   justify-content: center;
   margin-top: 0px;
 }
@@ -112,8 +111,8 @@ h1 {
 }
 
 input {
-  width: 332px;
-  height: 49px;
+  width: auto;
+  height: 47px;
   top: 199px;
   left: 55px;
   font-weight: 700;
@@ -161,7 +160,12 @@ button {
   max-width: 1440px;
   font-size: 18px;
   font-weight: 700;
-  margin-top: 35px;
+}
+
+.bouton-filtre {
+  display: flex;
+  gap: 20px 10px;
+  flex-wrap: wrap;
 }
 
 .txt-filtres {
@@ -181,7 +185,7 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 148px;
   height: 48px;
   border: 2px solid #d9d9d9;
 
@@ -190,7 +194,6 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 32px;
   padding: 4px 20px;
   padding-right: 20px;
 }
@@ -628,7 +631,6 @@ a {
     display: flex;
     width: 61px;
     height: 19px;
-    padding-top: ;
   }
 
   nav {
@@ -683,14 +685,12 @@ a {
   }
 
   .barre-filtre {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-    padding: unset;
-
-    /****** Hebergements And Populaires ***********/
+    justify-content: center;
+    padding: 10px;
   }
+
+  /****** Hebergements And Populaires ***********/
 
   .hebergements-and-populaires {
     display: flex;
