@@ -1,4 +1,4 @@
-/****** General ***********/
+/*****General*****/
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -636,7 +636,6 @@ a {
     display: flex;
     width: 61px;
     height: 19px;
-    padding-top: ;
   }
 
   nav {
@@ -680,6 +679,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 
   input {
@@ -719,7 +719,6 @@ a {
 
   .hebergements-and-populaires section {
     padding: unset;
-    background-color: unset;
     box-sizing: content-box;
     border-radius: unset;
     width: 100%;
@@ -779,6 +778,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: unset;
+    background-color: unset;
   }
 
   .hebergements-title {
