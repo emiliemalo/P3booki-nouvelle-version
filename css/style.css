@@ -34,7 +34,7 @@ header {
 
 .logo-booki img {
   display: flex;
-  padding: 38px 50px;
+  padding: 30px 30px 30px 0;
   align-items: flex-start;
   width: 61.09px;
   height: 19px;
@@ -297,7 +297,6 @@ a {
 }
 
 .hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -309,6 +308,7 @@ a {
   width: 65%;
   display: flex;
   flex-direction: column;
+  background-color: var(--main-bg-color);
 }
 
 .hebergements-title {
@@ -329,6 +329,7 @@ a {
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   width: 30%;
+  height: 100;
 }
 
 .H-card img {
@@ -381,6 +382,7 @@ a {
 
 /****** Populaires ***********/
 .populaires {
+  background-color: var(--main-bg-color);
   width: 32%;
 }
 
@@ -715,13 +717,13 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
   }
 
   .hebergements-and-populaires section {
     padding: unset;
     box-sizing: content-box;
     border-radius: unset;
-    width: 100%;
   }
 
   /***** POPULAIRE ****/
@@ -778,7 +780,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: unset;
-    background-color: unset;
+    background: var(--main-white-color);
   }
 
   .hebergements-title {
